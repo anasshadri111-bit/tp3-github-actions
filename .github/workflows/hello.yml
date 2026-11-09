@@ -12,6 +12,11 @@ jobs:
       - name: Afficher un message
         run: echo "Hello from GitHub Actions"
 
+      - name: Etape en erreur
+        run: |
+          echo "Cette etape va echouer"
+          exit 1
+
       - name: Informations sur l'environnement
         run: |
           echo "Version de Python :"

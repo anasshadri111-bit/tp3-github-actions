@@ -27,4 +27,4 @@ jobs:
           pip list
 
       - name: Executer les tests avec couverture
-        run: python -m pytest -v --cov=app --cov-report=term-missing
+        run: python -m pytest -v --cov=app --cov-report=term-missing --cov-fail-under=80
